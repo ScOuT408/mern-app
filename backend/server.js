@@ -15,11 +15,11 @@ app.use("/api/users", require("./routes/userRoute"));
 app.use("/api/goals", require("./routes/goalsRoute"));
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.use(express.static(path.join(__dirname, "frontend/dist")));
   console.log(__dirname);
 
   app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "../frontend", "dist", "index.html"))
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
   );
 }
 
