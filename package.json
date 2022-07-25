@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "npm install --prefix ./backend && node backend/server.js"
   }
 }
