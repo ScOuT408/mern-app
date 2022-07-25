@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fefef4;
+}
+
+.dashboard {
+  text-align: center;
+  margin: 10vh;
+}
+
+.dashboard h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #555;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.1rem;
+}
+
+.goals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.goal {
+  background-color: #f4f4f4;
+  padding: 2rem 3rem;
+  position: relative;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goal button {
+  padding: 0.5rem 1.2rem;
+  background: crimson;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  border: 0.2rem solid crimson;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.goal button:hover {
+  border: 0.2rem solid crimson;
+  background: transparent;
+  color: crimson;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media (max-width: 370px) {
+  html {
+    font-size: 51%;
+  }
+
+  .goal {
+    width: 90%;
+  }
+}
